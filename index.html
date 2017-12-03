@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LD40</title>
+	<link href="styles/layout.css" rel="stylesheet"/>
+	<link href="styles/font.css" rel="stylesheet"/>
+</head>
+<body>
+	<div id="game">
+		<div id="tutorial-overlay">
+			<h1 id="tutorial-title">Welcome to Patient Zero</h1>
+			<p>This is the tutorial. If you've already gone through the tutorial, skip ahead.</p>
+			<div id="tutorial-btns">
+				<div id="skip-btn">Skip</div>
+				<div id="next-btn">OK</div>
+			</div>
+		</div>
+		<div id="difficulty-modal">
+			<h1>Difficulty Settings</h1>
+			<div id="difficulty-btns">
+				<div>Easy</div>
+				<div class="active">Medium</div>
+				<div>Hard</div>
+				<div>Very Hard</div>
+			</div>
+			<div id="start-game-btn">
+				Let's Go
+			</div>
+		</div>
+		<div id="game-over-modal">
+			<h1 id="game-over-title"'>Oops, everyone died.</h1>
+			<p>More than 75% of the population is dead. So much for saving them.</p>
+			<div id="retry-game-btn">
+				Try again?
+			</div>
+		</div>
+		<svg height="640" width="640"></svg>
+		<div id="right-container">
+			<div id="game-info">
+				<div id="action-points-info">
+					<h1>3</h1>
+					<h2>ACTION<br/>POINTS</h2>
+				</div>
+				<div id="healthy-info">
+					<h1>30</h1>
+					<h2>HEALTHY</h2>
+				</div>
+				<div id="infected-info">
+					<h1>30</h1>
+					<h2>SICK</h2>
+				</div>
+				<div id="dead-info">
+					<h1>30</h1>
+					<h2>DEAD</h2>
+				</div>
+			</div>
+			<div id="info-container">
+				<div id="person-info">
+					<h1 id="person-data">Jane Doe, 26</h1>
+					<h2 id="person-status">STATUS UNKNOWN</h2>
+					<h2 id="quarantine-status">NOT QUARANTINED</h2>
+					<div class="actions-container">
+						<div id="quarantine-btn">
+							<object type="image/svg+xml" data="img/icons-01.svg"></object>
+							<h2>QUARANTINE</h2>
+							<h3>2</h3>
+						</div>
+						<div id="diagnose-btn">
+							<object type="image/svg+xml" data="img/icons-02.svg"></object>
+							<h2>DIAGNOSE</h2>
+							<h3>1</h3>
+						</div>
+						<div id="quarantine-household-btn">
+							<object type="image/svg+xml" data="img/icons-03.svg"></object>
+							<h2>QUARANTINE HOUSEHOLD</h2>
+							<h3>4</h3>
+						</div>
+						<div id="diagnose-household-btn">
+							<object type="image/svg+xml" data="img/icons-04.svg"></object>
+							<h2>DIAGNOSE HOUSEHOLD</h2>
+							<h3>2</h3>
+						</div>
+					</div>
+				</div>
+				<div id="group-info">
+					<h1 id="group-name">Brown Elementary</h1>
+					<h2 id="group-type">SCHOOL</h2>
+					<h2 id="group-status">OPEN</h2>
+					<div class="actions-container">
+						<div id="close-btn">
+							<object type="image/svg+xml" data="img/icons-01.svg"></object>
+							<h2>CLOSE DOWN</h2>
+							<h3>3</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="log">
+			</div>
+			<div id="next-day">
+				<div id="next-day-btn">
+					<object type="image/svg+xml" data="img/icons-05.svg"></object>
+					<h2>NEXT DAY</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bundle.js"></script>
+</body>
+</html>
